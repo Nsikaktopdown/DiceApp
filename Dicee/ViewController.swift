@@ -25,6 +25,10 @@ class ViewController: UIViewController {
 
     @IBAction func rollButtonPress(_ sender: UIButton) {
         // this will get executed when this button is clicked
+       updateDiceImages()
+    }
+    
+    func updateDiceImages(){
         randomDiceIndex1 = Int.random(in: 0 ... 5)
         randomDiceIndex2 = Int.random(in: 0 ... 5)
         print(randomDiceIndex1)
